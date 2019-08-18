@@ -31,7 +31,7 @@ car
 #access
 car['brand']
 car.get('year')
-
+car['year']
 
 #%% { curly bracket, comma}
 #Set - ordered collection of simple items, immutable
@@ -129,7 +129,7 @@ np3
 np3.shape
 
 #%%
-#pandas - dataframe, excel like
+x#pandas - dataframe, excel like
 #https://mode.com/python-tutorial/pandas-dataframe/
 import pandas as pd
 pd?
