@@ -1,10 +1,10 @@
 #Boxplots and paired differences
 
-import pandas
+import pandas as pd
 import matplotlib.pyplot as plt
 #data
 from pydataset import data
-mtcars = data('mtcars')
+mtcars = pd.read_csv('https://raw.githubusercontent.com/dupadhyaya/sipPython/master/data/mtcars.csv')
 mtcars.head()
 
 #Example 1
