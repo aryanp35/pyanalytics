@@ -4,8 +4,10 @@ import numpy as np
 
 #read data
 #df = pd.read_csv('data/mtcars.csv')
-from pydataset import data
-mtcars = data('mtcars')
+#from pydataset import data
+#mtcars = data('mtcars')
+mtcars = pd.read_csv('https://raw.githubusercontent.com/dupadhyaya/sipPython/master/data/mtcars.csv')
+
 mtcars.head()
 df=mtcars
 df.describe()
@@ -17,7 +19,7 @@ df.columns
 # #Skewness: It represents the shape of the distribution.
 #Skewness can be quantified to define the extent to which a distribution differs from a normal distribution.
 #For calculating skewness by using df.skew() python inbuilt function.
-
+df.skew()
 df.mpg
 df.mpg.skew()  #positive : right skewed
 df.mpg.plot(kind='hist')

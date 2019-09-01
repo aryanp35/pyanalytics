@@ -23,7 +23,7 @@ data
 #data has features, target has DV value Use only one feature
 X = data.X.values
 X
-X=X.reshape(-1,1)
+X=X.reshape(-1,1) #columnar form
 X
 y = data.Y.values
 y=y.reshape(-1,1)

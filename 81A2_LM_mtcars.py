@@ -38,7 +38,7 @@ from sklearn.datasets import load_iris
 # Load dataset.
 iris = load_iris()
 type(iris)  #Bunch
-iris
+
 X, y = iris.data, iris.target
 X
 y
@@ -67,7 +67,7 @@ MTmodel1 = ols("mpg ~ wt + hp", data=df1).fit()
 print(MTmodel1.summary())
 predictionM1 = MTmodel1.predict()
 predictionM1
-a#%%%
+#%%%
 fig= plt.figure(figsize=(15,8))
 fig = sm.graphics.plot_regress_exog(MTmodel1, 'wt', fig=fig)
 #%%%

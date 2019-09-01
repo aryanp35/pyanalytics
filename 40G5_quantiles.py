@@ -1,8 +1,9 @@
 #Topic: Quantiles in
 #-----------------------------
 #libraries
-from pydataset import data
-mtcars = data('mtcars')
+#from pydataset import data
+#mtcars = data('mtcars')
+mtcars = pd.read_csv('https://raw.githubusercontent.com/dupadhyaya/sipPython/master/data/mtcars.csv')
 mtcars.head()
 df=mtcars
 df.quantile(q=.5) #default 50%
@@ -18,7 +19,7 @@ plt.suptitle("Box Plots")
 plt.subplot(2, 2, 1) # matrix of 2 x 2 plots : first plot
 df["mpg"].plot.box() 
 plt.title('Mileage')
-plt.subplot(2, 2, 2) # matrix of 2 x 2 plots : 2nd plot
+plt.subplot(2, 2, 2) # matrix of 2 x 2 plots : 2nd plota
 df.wt.plot.box() 
 plt.title('Weight')
 plt.subplot(2, 2, 3) # matrix of 2 x 2 plots : 3nd plot

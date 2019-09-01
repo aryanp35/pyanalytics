@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from pydataset import data
 mtcars = data('mtcars')
 data=mtcars
+
 data.head()
 data.columns
 data.dtypes
