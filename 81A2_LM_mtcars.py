@@ -59,6 +59,7 @@ print(test_y)
 
 #%%%
 from sklearn import linear_model as lm
+import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from pydataset import data
 mtcars = data('mtcars')
@@ -92,13 +93,14 @@ DV= df1['mpg'].values
 DV
 IV_train, IV_test, DV_train, DV_test = train_test_split(IV, DV,test_size=0.2, random_state=123)
 IV_train
-
+#no summary in sklearn
 MTmodel2a = linear_model.LinearRegression()
 MTmodel2a.fit(IV_train, DV_train)
 MTmodel2a.intercept_
 MTmodel2a.coef_
 predicted2a = MTmodel2a.predict(IV_test)
 predicted2a
+
 #The mean squared error
 from sklearn.metrics import mean_squared_error, r2_score
 mean_squared_error(DV_test, predicted2a)

@@ -93,7 +93,7 @@ DV
 IV_train, IV_test, DV_train, DV_test = train_test_split(IV, DV,test_size=0.2, random_state=123)
 IV_train
 
-MTmodel2a = linear_model.LinearRegression()
+MTmodel2a = lm.LinearRegression()
 MTmodel2a.fit(IV_train, DV_train)
 MTmodel2a.intercept_
 MTmodel2a.coef_
