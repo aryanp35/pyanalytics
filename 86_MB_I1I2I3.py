@@ -59,7 +59,7 @@ confidence6 = association_rules(frequent_itemsets, metric="confidence",  min_thr
 print(confidence6[['antecedents', 'consequents', 'support','confidence']])
 
 
-#Part-1 Over : Interpret the results 
+                     #Part-1 Over : Interpret the results 
 #%%%% 
 
 frequent_itemsets = apriori(df, min_support=0.2, use_colnames = True)
